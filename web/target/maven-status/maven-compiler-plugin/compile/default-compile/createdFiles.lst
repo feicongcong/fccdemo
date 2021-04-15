@@ -1,9 +1,0 @@
-com\example\web\mapper\UserMapper.class
-com\example\web\service\MongoBookService.class
-com\example\web\config\RedissonConfig.class
-com\example\web\controller\BookController.class
-com\example\web\controller\UserController.class
-com\example\web\util\RedissonUtil.class
-com\example\web\entity\Book.class
-com\example\web\MydemoApplication.class
-com\example\web\entity\User.class
