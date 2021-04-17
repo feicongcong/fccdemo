@@ -69,6 +69,7 @@ public class MyClassLoader extends ClassLoader {
         Method method1 = clazz1.getDeclaredMethod("sout", null);
         method1.invoke(obj1, null);
         System.out.println(clazz1.getName());
+        System.out.println(clazz1.getClassLoader());
 
 
         MyClassLoader classLoader2 = new MyClassLoader("D:/test2");

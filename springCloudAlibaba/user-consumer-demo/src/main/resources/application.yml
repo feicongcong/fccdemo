@@ -1,0 +1,11 @@
+server:
+  port: 8045
+
+spring:
+  application:
+    name: user-consumer
+
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.72.133:8848

@@ -1,0 +1,14 @@
+server:
+  port: 8020
+#  servlet:
+#    context-path: /mall-order
+
+spring:
+  application:
+    name: order  #微服务名称
+
+  #配置nacos注册中心地址
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.72.133:8848
