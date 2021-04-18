@@ -24,6 +24,7 @@
         <module>jvm</module>
         <module>springCloudNetflix</module>
         <module>springCloudAlibaba</module>
+        <module>RocketMq</module>
     </modules>
 
 
