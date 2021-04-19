@@ -1,0 +1,2 @@
+#启动rmq-console
+java -jar rocketmq-console-ng-1.0.1.jar --rocketmq.config.namesrvAddr=127.0.0.1:9876

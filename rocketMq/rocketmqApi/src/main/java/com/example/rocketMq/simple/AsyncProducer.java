@@ -35,6 +35,7 @@ public class AsyncProducer {
         DefaultMQProducer producer = new DefaultMQProducer("Jodie_Daily_test");
         producer.setNamesrvAddr("192.168.72.133:9876");
         producer.start();
+        //重试次数，默认2次
         producer.setRetryTimesWhenSendAsyncFailed(0);
 
         int messageCount = 5;

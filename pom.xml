@@ -25,6 +25,7 @@
         <module>springCloudNetflix</module>
         <module>springCloudAlibaba</module>
         <module>RocketMq</module>
+        <module>kafka</module>
     </modules>
 
 

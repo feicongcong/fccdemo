@@ -1,0 +1,2 @@
+#创建名称为test的topic,一个副本,一个分区
+bin/kafka-topics.sh --create --zookeeper 192.168.65.60:2181 --replication-factor 1 --partitions 1 --topic test
