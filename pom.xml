@@ -26,6 +26,9 @@
         <module>springCloudAlibaba</module>
         <module>RocketMq</module>
         <module>kafka</module>
+        <module>shardingSphere</module>
+        <module>dubbodemo</module>
+        <module>jdk8</module>
     </modules>
 
 

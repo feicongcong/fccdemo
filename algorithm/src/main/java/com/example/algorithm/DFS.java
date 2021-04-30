@@ -2,6 +2,9 @@ package com.example.algorithm;
 
 import java.util.Scanner;
 
+/**
+ * 深度优先策略 是 回溯算法的一种
+ */
 public class DFS {
 
 	int n; // 地图的行
