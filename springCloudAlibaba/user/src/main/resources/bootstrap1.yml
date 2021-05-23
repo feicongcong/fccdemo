@@ -1,0 +1,34 @@
+
+spring:
+  application:
+    name: user
+  boot:
+    admin:
+      client:
+        url: http://localhost:8100
+
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.72.133:8848
+#      config:
+#        server-addr: 192.168.72.133:8848
+#        file-extension: yaml
+#        group: DEFAULT_GROUP
+    sentinel:
+      transport:
+        # 添加sentinel的控制台地址
+        dashboard: 192.168.72.133:8101
+        # 指定应用与Sentinel控制台交互的端口，应用本地会起一个该端口占用的HttpServer
+        #port: 8719
+
+
+#暴露actuator端点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always

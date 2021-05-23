@@ -1,0 +1,62 @@
+server:
+  port: 8046
+
+spring:
+  application:
+    name: user
+
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.72.133:8848
+    sentinel:
+      transport:
+        # 添加sentinel的控制台地址
+        dashboard: 192.168.72.133:8101
+        # 指定应用与Sentinel控制台交互的端口，应用本地会起一个该端口占用的HttpServer
+#        port: 8719
+
+      datasource:
+        ds1:
+          nacos:
+            server-addr: 192.168.72.133:8848
+            dataId: ${spring.application.name}
+            groupId: DEFAULT_GROUP
+            data-type: json
+            rule-type: flow
+
+#暴露actuator端点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+logging:
+  level:
+    com.example.cloudAli.feignApi: debug
+
+feign:
+#  client:
+#    config:
+#      order:  #对应微服务
+#        loggerLevel: FULL
+#contract: feign.Contract.Default   #指定Feign原生注解契约配置
+#        requestInterceptors[0]:  #配置拦截器
+#          com.tuling.mall.feigndemo.interceptor.FeignAuthRequestInterceptor
+# 连接超时时间，默认2s
+#        connectTimeout: 3000
+# 请求处理超时时间，默认5s
+#        readTimeout: 10000
+# 配置编解码器
+#        encoder: feign.jackson.JacksonEncoder
+#        decoder: feign.jackson.JacksonDecoder
+
+#feign 使用 okhttp
+#  httpclient:
+#    enabled: false
+  okhttp:
+    enabled: true
+
+  sentinel:
+    enabled: true

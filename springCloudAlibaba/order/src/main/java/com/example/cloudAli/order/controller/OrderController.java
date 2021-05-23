@@ -23,11 +23,11 @@ public class OrderController {
     @RequestMapping("/findOrderByUserId/{userId}")
     public R findOrderByUserId(@PathVariable("userId") Integer userId) {
 
-//        try {
-//            Thread.sleep(8000);
-//        } catch (InterruptedException e) {
-//            e.printStackTrace();
-//        }
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         //模拟异常
 //        if(userId==5){
 //            throw new IllegalArgumentException("非法参数异常");

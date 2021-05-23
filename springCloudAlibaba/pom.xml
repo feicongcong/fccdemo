@@ -16,6 +16,8 @@
         <module>commonAli</module>
         <module>order</module>
         <module>user</module>
+        <module>feignApi</module>
+        <module>cloudAdmin</module>
     </modules>
 
     <properties>
@@ -24,6 +26,7 @@
         <spring-cloud-alibaba.version>2.2.5.RELEASE</spring-cloud-alibaba.version>
         <spring-boot-starter-parent.version>2.3.2.RELEASE</spring-boot-starter-parent.version>
         <spring-cloud-alibaba.version>2.2.5.RELEASE</spring-cloud-alibaba.version>
+        <nacos-config-spring-boot.version>0.2.1</nacos-config-spring-boot.version>
     </properties>
 
     <dependencies>

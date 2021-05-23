@@ -1,0 +1,19 @@
+
+spring:
+  application:
+    name: demoApp
+  boot:
+    admin:
+      client:
+        url: http://127.0.0.1:8100
+
+
+#暴露actuator端点
+management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: '*'
+  endpoint:
+    health:
+      show-details: always

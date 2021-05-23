@@ -29,6 +29,9 @@
         <module>shardingSphere</module>
         <module>dubbodemo</module>
         <module>jdk8</module>
+        <module>nettydemo</module>
+        <module>springbootDemo</module>
+        <module>designMode</module>
     </modules>
 
 
